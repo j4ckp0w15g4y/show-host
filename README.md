@@ -22,9 +22,9 @@ User Story -
 ### Technologies Used:
 
 ### MVP
-1. Navigation to specified pages
-2. Display purchase options for pants
-3. Mobile responsive for home page
+1. 
+2. 
+3. 
 
 ### Project Prioritization
 
