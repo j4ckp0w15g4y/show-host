@@ -10,7 +10,7 @@ Users can search for upcoming gigs by genre, name, or date, and can then 'attend
 ### Description
  Problem - 
 
-More so than ever concertgoers are presented with a plethora of gigs to attend, but sometimes too much choice can be a bad thing. 
+More so than ever concertgoers are presented with a plethora of gigs to attend, but it's harder than ever to find the next big thing 
 
  Solution - 
 
