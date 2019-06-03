@@ -14,7 +14,7 @@ More so than ever concertgoers are presented with a plethora of gigs to attend, 
 
 Solution - 
 
-'ShowHost' aggregates the hottest gigs in the area to help the user have a streamlined experience looking for shows
+'ShowHost' aggregates the hottest gigs in the area to create a streamlined gig-searching experience for users. 
 
 ![]()
 
