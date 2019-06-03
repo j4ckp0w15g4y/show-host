@@ -66,6 +66,8 @@ For this project I am using:
 2. Users can 'attend' gigs
 3. Users can create, update, and delete events. 
 
+I am essentially rendering information drawn from an API that I have created, and simultaneously implementing basic CRUD functionality.
+
 ### BONUS
 
 - Users  can only create, update, and delete events if they are members of 'ShowHost'.
