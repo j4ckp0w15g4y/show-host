@@ -20,7 +20,9 @@ Solution -
 
 User Story - 
 
-Babs K: 
+Who: Babs K
+
+What: A huge music fan and wants to go to the hottest shows
 
 Loves music and going to concerts, but she finds more than ever that she's missing out on shows that she would've loved to attend. 
 
