@@ -31,6 +31,22 @@ Loves music and going to concerts, but she finds more than ever that she's missi
 ### Project Schedule
 
 
+### Wireframes
+
+![20190603_095018](https://user-images.githubusercontent.com/46265220/58807095-6fba5c00-85e5-11e9-914a-f29b1d55cdd3.jpg)
+
+![20190603_094518](https://user-images.githubusercontent.com/46265220/58807104-71841f80-85e5-11e9-81ef-0020c7d14646.jpg)
+
+![20190603_091831](https://user-images.githubusercontent.com/46265220/58807105-73e67980-85e5-11e9-9d35-9331b0e86d6a.jpg)
+
+![20190603_091840](https://user-images.githubusercontent.com/46265220/58807109-7517a680-85e5-11e9-9f58-d05cc45dc8d2.jpg)
+
+![20190603_091819](https://user-images.githubusercontent.com/46265220/58807112-777a0080-85e5-11e9-95e2-9a410d72fc9b.jpg)
+
+![20190603_094836](https://user-images.githubusercontent.com/46265220/58807269-bf992300-85e5-11e9-9cbc-f2d4f93195d7.jpg)
+
+
+
 
 
 
