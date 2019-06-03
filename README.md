@@ -20,7 +20,14 @@ Solution -
 
 User Story - 
 
+Babs K: 
+
+Loves music and going to concerts, but she finds more than ever that she's missing out on shows that she would've loved to attend. 
+
+
+
 ### Project Schedule
+
 
 
 
