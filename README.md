@@ -43,9 +43,13 @@ For this project I am using:
 - CSS
 
 ### MVP
-1. 
-2. 
-3. 
+1. Users can search for gigs by genre, date, or by artist
+2. Users can 'attend' gigs
+3. Users can create, update, and delete events. 
+
+### BONUS
+
+- Users  can only create, update, and delete events if they are members of 'ShowHost'.
 
 ### Project Prioritization
 
