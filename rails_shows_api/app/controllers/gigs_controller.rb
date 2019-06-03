@@ -4,10 +4,18 @@ class GigsController < ApplicationController
         render json: @gigs, status: :ok
       end
 
-      def show 
+    #   def show 
+    #     @gig = Gig.find(params[:id])
+    #     render json: @gig, status: :ok
+    # end 
+
+    def show
         @gig = Gig.find(params[:id])
-        render json: @gig, status: :ok
-    end 
+        @users = @gig.users
+        render json: @users, include: :gigs, status: :ok
+        # include: :@gigs
+         
+      end
 
     def create
         @gig = Gig.new(params.require(:gig).permit(:name, :date, :location, :event_info, :tickets_url, :image_url))

@@ -4,12 +4,12 @@ Rails.application.routes.draw do
   resources :gigs
   # , only: [:index, :show]
 
-  scope '/users/:user_id' do
-    resources :gigs
-  end
+  # scope '/users/:user_id' do
+  #   resources :gigs
+  # end
 
-  scope '/gigs/:gig_id' do
-    resources :users
-  end
+  # scope '/gigs/:gig_id' do
+  #   resources :users
+  # end
 
 end

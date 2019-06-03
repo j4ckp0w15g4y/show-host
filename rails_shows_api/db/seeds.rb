@@ -24,6 +24,17 @@ gig1 = Gig.create({
     image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w"
 })
 
+gig2 = Gig.create({
+    name: "Titan Show",
+    date: "07/22/2019",
+    location: "Bronx",
+    event_info: "Get READY!!!!!",
+    tickets_url: "www.alpha.com",
+    image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w"
+})
+
+
+
 user1 = User.create({
     username: "jackpowisgay"
 })
@@ -33,6 +44,6 @@ user2 = User.create({
 })
 
 gig1.users.push(user1, user2)
-
+gig2.users.push(user2)
 
 #   Movie.find(1).genres.push(Genre.find(4), Genre.find(3))
