@@ -28,4 +28,11 @@ user1 = User.create({
     username: "jackpowisgay"
 })
 
-user1.gigs.push(gig1)
+user2 = User.create({
+    username: "jaredhollis"
+})
+
+gig1.users.push(user1, user2)
+
+
+#   Movie.find(1).genres.push(Genre.find(4), Genre.find(3))
