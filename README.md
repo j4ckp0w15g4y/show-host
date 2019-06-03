@@ -8,11 +8,11 @@ Users can search for upcoming gigs by genre, name, or date, and can then 'attend
  
         
 ### Description
-Problem - 
+ Problem - 
 
 More so than ever concertgoers are presented with a plethora of gigs to attend, but sometimes too much choice can be a bad thing. 
 
-Solution - 
+ Solution - 
 
 'ShowHost' aggregates the hottest gigs in the area to create a streamlined gig-searching experience for users. 
 
