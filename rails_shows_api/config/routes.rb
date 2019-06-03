@@ -1,3 +1,15 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :users
+  # , only: [:index, :show]
+  resources :gigs
+  # , only: [:index, :show]
+
+  scope '/users/:user_id' do
+    resources :gigs
+  end
+
+  scope '/gigs/:gig_id' do
+    resources :users
+  end
+
 end
