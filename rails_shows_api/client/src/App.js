@@ -50,7 +50,6 @@ class App extends Component {
       apiDataLoaded: true 
 
     })
-    this.showGigsOnPage();
   }
   
   showAllGigs(){
@@ -99,7 +98,7 @@ class App extends Component {
       <div className="App">        
           <Header submitFuncLocation = {this.submitFuncLocation} submitFuncGenre = {this.submitFuncGenre} showAllGigs={this.showAllGigs}/>
           <Route exact path="/create-event" render={ () => <CreateEvent appendEventFunc = {this.appendEventFunc}/>}/>
-          <Route exact path="/all-gigs" component={ListAllGigs} />
+          {/* <Route exact path="/all-gigs" component={ListAllGigs} /> */}
           {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1> Local artists doing artist stuff</h1>}
           {/* <Route exact path="/" component={App}/> */}
 
