@@ -12,19 +12,29 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
-    const quotes = await axios.get('http://localhost:4567/quotes');
-    const apiData = quotes.data;
+    const gigs = await axios.get('http://localhost:4567/gigs');
+    const apiData = gigs.data;
+    this.setState({
+      apiData: apiData,
+      apiDataLoaded: true 
+
+    })
   }
   
   
 
-  showQuotesOnPage() {
-    return this.state.apiData.map((quote) => {
+
+
+  showGigsOnPage() {
+    return this.state.apiData.map((gig) => {
       return (
-        <div className="quote" key={quote.id}>
-          <p className="content">{quote.content}</p>
-          <span className="author">{quote.author}</span>
-          <span className="category">{quote.category}</span>
+        <div>
+        <h2 className="gig-info" >{gig.name}</h2>
+          <p className="gig-info">{gig.date}</p>
+          <div className="gig-info">{gig.genre}</div>
+          <p className="gig-info">{gig.event_info}</p>
+          <a className="gig-link" href={gig.tickets_url}>Link to tickets here</a>
+          <img className="gig-image" src={gig.image_url} />
         </div>
       );
     });
@@ -34,7 +44,7 @@ class App extends Component {
     return (
       <div className="App">
         <div>
-          {(this.state.apiDataLoaded) ? this.showQuotesOnPage() : <p>Loading...</p>}
+          {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <p>Loading...</p>}
         </div>
       </div>
     );
