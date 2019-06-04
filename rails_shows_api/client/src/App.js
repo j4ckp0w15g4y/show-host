@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import './App.css';
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import Home from './components/Home/Home'
+
 
 class App extends Component {
   constructor() {
@@ -33,7 +37,7 @@ class App extends Component {
           <p className="gig-info">{gig.date}</p>
           <div className="gig-info">{gig.genre}</div>
           <p className="gig-info">{gig.event_info}</p>
-          <a className="gig-link" href={gig.tickets_url}>Link to tickets here</a>
+          <a className="gig-link" href={gig.tickets_url} target="_blank">Link to tickets here</a>
           <img className="gig-image" src={gig.image_url} />
         </div>
       );
@@ -43,10 +47,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div>
-          {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <p>Loading...</p>}
+          <Header />
+          {/* {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <p>Loading...</p>} */}
+          <Home />
+        <Footer />
         </div>
-      </div>
     );
   }
 }

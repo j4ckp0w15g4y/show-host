@@ -1,7 +1,7 @@
 class GigsController < ApplicationController
     def index
         @gigs = Gig.all
-        render json: @gigs, status: :ok
+        render json: @gigs, include: :users, status: :ok
       end
 
       def show 
