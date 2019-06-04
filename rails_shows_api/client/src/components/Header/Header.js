@@ -13,9 +13,10 @@ class Header extends Component {
             <nav className="navbar is-black" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">  
             {/* <a onClick={this.props.showAllGigs}>Show All Gigs</a>          */}
+            <Link to="/all-gigs">List All Gigs</Link>
              <h3>Select Genre: <SubmitFormGenre submitFuncGenre = {this.props.submitFuncGenre}/> </h3>   
               <h3>Select Borough: <SubmitFormLocation submitFuncLocation = {this.props.submitFuncLocation} /></h3>
-              <Link to='/create-event'>Add New Event</Link>  
+              <Link onClick={this.props.handleClick} to='/create-event'>Add New Event</Link>  
               
 
 
