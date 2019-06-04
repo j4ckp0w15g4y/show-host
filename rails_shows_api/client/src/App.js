@@ -45,6 +45,21 @@ class App extends Component {
     this.showGigsOnPage();
   }
   
+  showAllGigs(){
+    return this.state.apiData.map((gig) => {
+      return (
+        <div>
+        <h2 className="gig-info" >Name: {gig.name}</h2>
+          <p className="gig-info">Date: {gig.date}</p>
+          <div className="gig-info">Genre: {gig.genre}</div>
+          <div className="gig-info">Location: {gig.location}</div>
+          <p className="gig-info">Event info: {gig.event_info}</p>
+          <a className="gig-link" href={gig.tickets_url} rel="noopener noreferrer" target="_blank">Link to tickets here</a>
+          <img className="gig-image" src={gig.image_url} />
+        </div>
+      );     
+    })
+  }
   
 
 
@@ -54,6 +69,7 @@ class App extends Component {
       if(gig.genre == this.state.genre_form || gig.location == this.state.location_form) {
         return (
           <div>
+            
           <h2 className="gig-info" >Name: {gig.name}</h2>
             <p className="gig-info">Date: {gig.date}</p>
             <div className="gig-info">Genre: {gig.genre}</div>
@@ -73,7 +89,7 @@ class App extends Component {
     console.log(this.state.apiData)
     return (
       <div className="App">        
-          <Header submitFuncLocation = {this.submitFuncLocation} submitFuncGenre = {this.submitFuncGenre}/>
+          <Header submitFuncLocation = {this.submitFuncLocation} submitFuncGenre = {this.submitFuncGenre} showAllGigs={this.showAllGigs}/>
           <Route exact path="/create-event" component={CreateEvent}/>
 
           {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1> Local artists doing artist stuff</h1>}

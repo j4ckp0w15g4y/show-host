@@ -30,7 +30,7 @@ class CreateEvent extends Component {
         const { name, date,location,genre, event_info, tickets_url, image_url, isSubmit, isError } = this.state
 
         if(isSubmit === true){ 
-            return <Redirect to='/dashboard'/>
+            return <Redirect to='/'/>
         } else if (isError === true){            
             alert('Incorrect Values')
         }  
