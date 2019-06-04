@@ -8,8 +8,8 @@ Rails.application.routes.draw do
   #   resources :gigs
   # end
 
-  # scope '/gigs/:gig_id' do
-  #   resources :users
-  # end
+  scope '/gigs/:gig_id' do
+    resources :users
+  end
 
 end

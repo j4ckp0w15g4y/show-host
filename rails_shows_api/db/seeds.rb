@@ -13,28 +13,6 @@
 # t.text :event_info
 # t.string :tickets_url
 # t.string :image_url
-
-
-gig1 = Gig.create({
-    name: "Battle of the Bands",
-    date: "07/22/2019",
-    location: "Williamsburg",
-    event_info: "This years hottest show",
-    tickets_url: "www.blahblah.com",
-    image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w"
-})
-
-gig2 = Gig.create({
-    name: "Titan Show",
-    date: "07/22/2019",
-    location: "Bronx",
-    event_info: "Get READY!!!!!",
-    tickets_url: "www.alpha.com",
-    image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w"
-})
-
-
-
 user1 = User.create({
     username: "jackpowisgay"
 })
@@ -42,6 +20,54 @@ user1 = User.create({
 user2 = User.create({
     username: "jaredhollis"
 })
+
+gig1 = Gig.create({
+    name: "Battle of the Bands",
+    date: "07/22/2019",
+    genre: "Metal",
+    location: "Williamsburg",
+    event_info: "This years hottest show",
+    tickets_url: "www.blahblah.com",
+    image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
+    user_id: 1
+})
+
+gig2 = Gig.create({
+    name: "Titan Show",
+    date: "07/22/2019",
+    location: "Bronx",
+    genre: "Jazz",
+    event_info: "Get READY!!!!!",
+    tickets_url: "www.alpha.com",
+    image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
+    user_id: 2
+})
+
+gig3 = Gig.create({
+    name: "The Cretins Live",
+    date: "10/12/2019",
+    location: "Staten Island",
+    genre: "Punk",
+    event_info: "Live for the first time in 70(?) years, the Cretins are back with new material!!",
+    tickets_url: "www.tickets-cretins.com",
+    image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
+    user_id: 2
+})
+
+gig4 = Gig.create({
+    name: "Ryan's ass",
+    date: "10/12/2019",
+    location: "Long Island",
+    genre: "Rock",
+    event_info: "Ryan's ass is back with a heap of new material!!!",
+    tickets_url: "www.tickets-cretins.com",
+    image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
+    user_id: 1
+})
+
+
+
+
 
 gig1.users.push(user1, user2)
 gig2.users.push(user2)

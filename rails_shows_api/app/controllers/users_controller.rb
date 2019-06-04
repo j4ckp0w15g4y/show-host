@@ -6,18 +6,8 @@ def index
 
 def show
     @user = User.find(params[:id])
-    @gigs = @user.gigs
-    render json: @gigs, include: :users, status: :ok
+    render json: @user, include: :gigs, status: :ok
   end
-
-# def show 
-#     @user = User.find(params[:id])
-#     render json: @user, status: :ok
-# end 
-
-
-
-
 
   def create 
   end 
