@@ -72,10 +72,12 @@ class App extends Component {
     console.log(this.state.location_form)
     console.log(this.state.apiData)
     return (
-      <div className="App">
+      <div className="App">        
           <Header submitFuncLocation = {this.submitFuncLocation} submitFuncGenre = {this.submitFuncGenre}/>
-          {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1> Welcome to ShowHost, where local artists do local artist stuff</h1>}
           <Route exact path="/create-event" component={CreateEvent}/>
+
+          {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1> Local artists doing artist stuff</h1>}
+          {/* <Route exact path="/" component={App}/> */}
 
           
         <Footer />

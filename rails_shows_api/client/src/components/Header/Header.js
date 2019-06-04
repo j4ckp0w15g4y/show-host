@@ -9,12 +9,13 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
+                <Link to='/'><h1 className="showhost-hero">ShowHost</h1></Link>
             <nav className="navbar is-black" role="navigation" aria-label="main navigation">
-            <div className="navbar-brand">
-                
+            <div className="navbar-brand">            
              <h3>Select Genre: <SubmitFormGenre submitFuncGenre = {this.props.submitFuncGenre}/> </h3>   
               <h3>Select Borough: <SubmitFormLocation submitFuncLocation = {this.props.submitFuncLocation} /></h3>
-              <Link to='/create-event'>Add New Event</Link>
+              <Link to='/create-event'>Add New Event</Link>  
+              
 
 
                 </div>

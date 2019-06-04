@@ -66,11 +66,11 @@ gig4 = Gig.create({
 })
 
 gig5 = Gig.create({
-    name: "Ryan's ass",
+    name: "Show",
     date: "10/12/2019",
     location: "Queens",
     genre: "Rock",
-    event_info: "Ryan's ass is back with a heap of new material!!!",
+    event_info: "Rock gig",
     tickets_url: "www.tickets-cretins.com",
     image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
     user_id: 1

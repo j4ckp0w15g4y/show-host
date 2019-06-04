@@ -1,105 +1,66 @@
 import React, { Component } from 'react';
 import { Redirect,Link  } from 'react-router-dom';
+import './CreateEvent.css';
+
 
 class CreateEvent extends Component {
     constructor(){
         super();
         this.state = {
-            name: '',
-            website: '',
-            postalCode: '',
-            phoneNumber: '',
-            address: '',
-            city: '',
-            state: '',
-            isSubmit : false,
-            isError : false,
-            disabled: true,
-            longitude: '',
-            latitude: ''
+            name: "", 
+            date: "", 
+            location: "",
+            genre: "",
+            event_info: "",
+            tickets_url: "",
+            image_url: "",
+            isSubmit: false,
+            isError: false        
         }
     }
+   
 
-    componentDidMount() {
-        this.setState({isError:false, isSubmit:false, 
-            disabled:true
-        })        
-    }
-
-    handleCreateLocation = async () => {
-        const { name, website, postalCode,phoneNumber,longitude,latitude  } = this.state
-        try {
-            const resp = await postLocations({
-                name, 
-                website,
-                postalCode,
-                phoneNumber,
-                longitude,
-                latitude
-            })
-            return resp
-        } catch (error) {
-            throw error
-        }
-    }
 
     handleFormChange = async (e) => {
         const { name, value } = e.target;    
         await this.setState({ [name]: value });
     }
 
-    handleFormSubmit = async (e) => {
-        const {name,address,city,state} = this.state
-        e.preventDefault();
-        try {
-            const resp = await getGeoCode(address,city,state)
-            // console.log(resp.results)
-            const results = resp.results
-            
-            await this.setState({
-                longitude: results[0].geometry.location.lng,
-                latitude: results[0].geometry.location.lat,
-                isSubmit:true                
-            })
-            await this.handleCreateLocation()
-            return resp
-        } catch (error) {
-            if(error)this.setState({isError:true})
-        }
-    }
-    
-    render() {
-        const { name, website,postalCode,phoneNumber, address, city, state, isSubmit, isError  } = this.state
-        
+     render() {    
+        const { name, date,location,genre, event_info, tickets_url, image_url, isSubmit, isError } = this.state
+
         if(isSubmit === true){ 
             return <Redirect to='/dashboard'/>
         } else if (isError === true){            
             alert('Incorrect Values')
         }  
 
+    
         return (
-            <div className="add-location">
-                <Link to='/dashboard'>Back</Link>
-                <form onChange={this.handleFormChange} onSubmit={this.handleFormSubmit}>
+            <div>
+                <form className="create-event">
                     <label>Name</label>
-                    <input name="name" value={name}/>
-                    <label>Website</label>
-                    <input name="website" value={website}/>
-                    <label>Postal Code</label>
-                    <input name="postalCode" value={postalCode}/>
-                    <label>Phone Number</label>
-                    <input name="phoneNumber" value={phoneNumber}/>
-                    <label>Address</label>
-                    <input name="address" value={address} type="text"/>
-                    <label>City</label>
-                    <input name="city" value={city} type="text"/>
-                    <label>State</label>
-                    <input name="state" value={state} type="text"/>
-                    <button type="submit">Submit</button>
+                    <input name="name" value={name} onChange={this.handleFormChange}/>
+                    <label>Date</label>
+                    <input name="date" value={date} onChange={this.handleFormChange}/>
+                    <label>Location</label>
+                    <input name="location" value={location} onChange={this.handleFormChange}/>
+                    <label>Genre</label>
+                    <input name="genre" value={genre} onChange={this.handleFormChange}/>
+                    <label>Event Info</label>
+                    <input name="event_info" value={event_info} onChange={this.handleFormChange}/>
+                    <label>Ticket URL</label>
+                    <input name="tickets_url" value={tickets_url} onChange={this.handleFormChange}/>
+                    <label>Image URL</label>
+                    <input name="image_url" value={image_url} onChange={this.handleFormChange}/>
+                    <button type="submit">Submit</button> 
+                    <Link to='/'>Back</Link>
+                   
                 </form>
+
             </div>
         );
     }
 }
 
-export default AddLocation;
+export default CreateEvent;
