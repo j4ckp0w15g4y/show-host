@@ -7,33 +7,41 @@ class CreateEvent extends Component {
     constructor(){
         super();
         this.state = {
-            name: "", 
-            date: "", 
-            location: "",
-            genre: "",
-            event_info: "",
-            tickets_url: "",
-            image_url: "",
-            isSubmit: false,
-            isError: false        
+            new_event: {
+                name: "", 
+                date: "", 
+                location: "",
+                genre: "",
+                event_info: "",
+                tickets_url: "",
+                image_url: "",
+                isSubmit: false,
+                isError: false    
+            }             
         }
     }
    
 
 
     handleFormChange = async (e) => {
+        e.preventDefault();
         const { name, value } = e.target;    
-        await this.setState({ [name]: value });
+        await this.setState(prevState =>({
+            new_event: {
+                ...prevState.new_event,
+                [name]: value,
+            }
+        }))
     }
 
      render() {    
-        const { name, date,location,genre, event_info, tickets_url, image_url, isSubmit, isError } = this.state
+        const { name, date,location,genre, event_info, tickets_url, image_url, isSubmit, isError } = this.state.new_event
 
-        if(isSubmit === true){ 
-            return <Redirect to='/'/>
-        } else if (isError === true){            
-            alert('Incorrect Values')
-        }  
+        // if(isSubmit === true){ 
+        //     return <Redirect to='/'/>
+        // } else if (isError === true){            
+        //     alert('Incorrect Values')
+        // }  
 
     
         return (

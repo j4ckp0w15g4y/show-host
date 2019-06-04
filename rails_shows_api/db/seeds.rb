@@ -35,7 +35,7 @@ gig1 = Gig.create({
 gig2 = Gig.create({
     name: "Titan Show",
     date: "07/22/2019",
-    location: "Bronx",
+    location: "The Bronx",
     genre: "Jazz",
     event_info: "Get READY!!!!!",
     tickets_url: "www.alpha.com",
