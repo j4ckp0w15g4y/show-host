@@ -8819,3 +8819,1414 @@ Processing by GigsController#index as HTML
 Completed 200 OK in 31ms (Views: 19.4ms | ActiveRecord: 9.5ms)
 
 
+Started GET "/gigs" for ::1 at 2019-06-04 11:57:42 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (29.9ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 119ms (Views: 70.3ms | ActiveRecord: 38.4ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 12:01:20 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (45.6ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 177ms (Views: 117.5ms | ActiveRecord: 52.4ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 12:03:14 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.9ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 28ms (Views: 22.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 12:03:24 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 23ms (Views: 19.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 12:03:29 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.6ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 35ms (Views: 28.6ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 12:03:51 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.6ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 31ms (Views: 21.8ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 12:03:52 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (131.0ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 166ms (Views: 23.2ms | ActiveRecord: 142.2ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 12:04:08 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (4.0ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (25.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 59ms (Views: 20.6ms | ActiveRecord: 37.7ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 12:04:16 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.4ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 186ms (Views: 182.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 12:04:57 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.8ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 30ms (Views: 16.1ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 12:05:00 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.6ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 18ms (Views: 14.0ms | ActiveRecord: 3.3ms)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (22.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (302.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "rails_shows_api_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (212.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "rails_shows_api_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (1701.1ms)[0m  [1m[35mCREATE DATABASE "rails_shows_api_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (863.9ms)[0m  [1m[35mCREATE DATABASE "rails_shows_api_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (1.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "gigs" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (13.5ms)[0m  [1m[35mCREATE TABLE "gigs" ("id" bigserial primary key, "name" character varying NOT NULL, "date" character varying NOT NULL, "location" character varying NOT NULL, "genre" character varying NOT NULL, "event_info" text NOT NULL, "tickets_url" character varying, "image_url" character varying, "user_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "gigs_users" CASCADE[0m
+  ↳ db/schema.rb:31
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "gigs_users" ("gig_id" bigint NOT NULL, "user_id" bigint NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_gigs_users_on_gig_id_and_user_id" ON "gigs_users"  ("gig_id", "user_id")[0m
+  ↳ db/schema.rb:31
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_gigs_users_on_user_id_and_gig_id" ON "gigs_users"  ("user_id", "gig_id")[0m
+  ↳ db/schema.rb:31
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:38
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:38
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190603145443)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190603145012),
+(20190603145354);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (3.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-04 16:14:47.232424"], ["updated_at", "2019-06-04 16:14:47.232424"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "gigs" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (14.4ms)[0m  [1m[35mCREATE TABLE "gigs" ("id" bigserial primary key, "name" character varying NOT NULL, "date" character varying NOT NULL, "location" character varying NOT NULL, "genre" character varying NOT NULL, "event_info" text NOT NULL, "tickets_url" character varying, "image_url" character varying, "user_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "gigs_users" CASCADE[0m
+  ↳ db/schema.rb:31
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "gigs_users" ("gig_id" bigint NOT NULL, "user_id" bigint NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_gigs_users_on_gig_id_and_user_id" ON "gigs_users"  ("gig_id", "user_id")[0m
+  ↳ db/schema.rb:31
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_gigs_users_on_user_id_and_gig_id" ON "gigs_users"  ("user_id", "gig_id")[0m
+  ↳ db/schema.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:38
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:38
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190603145443)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190603145012),
+(20190603145354);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (4.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-04 16:14:47.337588"], ["updated_at", "2019-06-04 16:14:47.337588"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-06-04 16:14:47.341914"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (5.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "jackpowisgay"], ["created_at", "2019-06-04 16:14:47.445961"], ["updated_at", "2019-06-04 16:14:47.445961"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "jaredhollis"], ["created_at", "2019-06-04 16:14:47.453407"], ["updated_at", "2019-06-04 16:14:47.453407"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mGig Create (8.6ms)[0m  [1m[32mINSERT INTO "gigs" ("name", "date", "location", "genre", "event_info", "tickets_url", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Battle of the Bands"], ["date", "07/22/2019"], ["location", "Brooklyn"], ["genre", "Metal"], ["event_info", "This years hottest show"], ["tickets_url", "www.blahblah.com"], ["image_url", "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w"], ["user_id", 1], ["created_at", "2019-06-04 16:14:47.509016"], ["updated_at", "2019-06-04 16:14:47.509016"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mGig Create (0.5ms)[0m  [1m[32mINSERT INTO "gigs" ("name", "date", "location", "genre", "event_info", "tickets_url", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Titan Show"], ["date", "07/22/2019"], ["location", "Bronx"], ["genre", "Jazz"], ["event_info", "Get READY!!!!!"], ["tickets_url", "www.alpha.com"], ["image_url", "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w"], ["user_id", 2], ["created_at", "2019-06-04 16:14:47.533395"], ["updated_at", "2019-06-04 16:14:47.533395"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mGig Create (0.5ms)[0m  [1m[32mINSERT INTO "gigs" ("name", "date", "location", "genre", "event_info", "tickets_url", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "The Cretins Live"], ["date", "10/12/2019"], ["location", "Staten Island"], ["genre", "Punk"], ["event_info", "Live for the first time in 70(?) years, the Cretins are back with new material!!"], ["tickets_url", "www.tickets-cretins.com"], ["image_url", "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w"], ["user_id", 2], ["created_at", "2019-06-04 16:14:47.542773"], ["updated_at", "2019-06-04 16:14:47.542773"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:57
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:57
+  [1m[36mGig Create (0.4ms)[0m  [1m[32mINSERT INTO "gigs" ("name", "date", "location", "genre", "event_info", "tickets_url", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Ryan's gig"], ["date", "10/12/2019"], ["location", "Manhattan"], ["genre", "Hip-hop"], ["event_info", "Ryan's back with a heap of new material!!!"], ["tickets_url", "www.tickets-cretins.com"], ["image_url", "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w"], ["user_id", 1], ["created_at", "2019-06-04 16:14:47.560840"], ["updated_at", "2019-06-04 16:14:47.560840"]]
+  ↳ db/seeds.rb:57
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:57
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mGig Create (0.3ms)[0m  [1m[32mINSERT INTO "gigs" ("name", "date", "location", "genre", "event_info", "tickets_url", "image_url", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Ryan's ass"], ["date", "10/12/2019"], ["location", "Queens"], ["genre", "Rock"], ["event_info", "Ryan's ass is back with a heap of new material!!!"], ["tickets_url", "www.tickets-cretins.com"], ["image_url", "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w"], ["user_id", 1], ["created_at", "2019-06-04 16:14:47.564517"], ["updated_at", "2019-06-04 16:14:47.564517"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:83
+  [1m[36mGig::HABTM_Users Create (5.9ms)[0m  [1m[32mINSERT INTO "gigs_users" ("gig_id", "user_id") VALUES ($1, $2)[0m  [["gig_id", 1], ["user_id", 1]]
+  ↳ db/seeds.rb:83
+  [1m[36mGig::HABTM_Users Create (0.4ms)[0m  [1m[32mINSERT INTO "gigs_users" ("gig_id", "user_id") VALUES ($1, $2)[0m  [["gig_id", 1], ["user_id", 2]]
+  ↳ db/seeds.rb:83
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:83
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mGig::HABTM_Users Create (0.3ms)[0m  [1m[32mINSERT INTO "gigs_users" ("gig_id", "user_id") VALUES ($1, $2)[0m  [["gig_id", 2], ["user_id", 2]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+Started GET "/gigs/3" for ::1 at 2019-06-04 12:14:52 -0400
+Processing by GigsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGig Load (6.0ms)[0m  [1m[34mSELECT  "gigs".* FROM "gigs" WHERE "gigs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gigs_controller.rb:8
+  [1m[36mUser Load (16.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:9
+Completed 200 OK in 57ms (Views: 15.3ms | ActiveRecord: 23.3ms)
+
+
+Started GET "/gigs/" for ::1 at 2019-06-04 12:14:56 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 24ms (Views: 18.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:05:09 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (68.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (70.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 330ms (Views: 165.0ms | ActiveRecord: 145.5ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:07:20 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (110.7ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (48.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (25.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 309ms (Views: 102.1ms | ActiveRecord: 191.3ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:08:20 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (41.4ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 192ms (Views: 131.4ms | ActiveRecord: 54.1ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:08:27 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 52ms (Views: 44.1ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:08:47 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (64.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (84.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 319ms (Views: 158.6ms | ActiveRecord: 153.3ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:08:48 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.6ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (12.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (10.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 64ms (Views: 34.9ms | ActiveRecord: 29.2ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:09:23 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (2.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 98ms (Views: 82.3ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:09:23 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (2.6ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 541ms (Views: 536.1ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:19:47 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (60.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 222ms (Views: 118.5ms | ActiveRecord: 95.4ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:19:48 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (9.1ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (8.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 65ms (Views: 42.6ms | ActiveRecord: 20.9ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:22:05 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (2.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (22.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (8.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 130ms (Views: 89.4ms | ActiveRecord: 37.1ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:22:55 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.1ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (11.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (27.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 63ms (Views: 21.6ms | ActiveRecord: 40.8ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:23:10 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.6ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 107ms (Views: 90.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:23:10 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 42ms (Views: 35.0ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:24:51 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (4.6ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 69ms (Views: 50.4ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:24:51 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.6ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 27ms (Views: 22.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:26:23 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 80ms (Views: 69.5ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:26:23 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.7ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 64ms (Views: 50.4ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:27:00 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.7ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 25ms (Views: 19.7ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:27:00 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.6ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:27:03 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (4.4ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 31ms (Views: 24.3ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:27:03 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.7ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 34ms (Views: 29.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:27:11 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.6ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (12.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (14.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 65ms (Views: 26.1ms | ActiveRecord: 38.1ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:27:11 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.9ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (15.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 45ms (Views: 24.2ms | ActiveRecord: 20.5ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:27:47 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 123ms (Views: 17.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:28:12 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (2.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (12.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 146ms (Views: 119.8ms | ActiveRecord: 20.7ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:29:03 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.8ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 91ms (Views: 73.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:29:03 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (3.1ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 47ms (Views: 26.3ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:29:10 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.7ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 28ms (Views: 21.7ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:29:10 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (10.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (10.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 50ms (Views: 25.6ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:29:16 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (4.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 34ms (Views: 23.7ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:29:16 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.9ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 28ms (Views: 23.4ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:29:17 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:29:29 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (30.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 65ms (Views: 20.4ms | ActiveRecord: 44.0ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:29:52 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.8ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 25ms (Views: 18.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:29:53 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 23ms (Views: 17.1ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:58:53 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (22.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (34.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 110ms (Views: 46.3ms | ActiveRecord: 59.7ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:59:37 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (9.7ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (14.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 123ms (Views: 79.5ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:59:41 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.6ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 27ms (Views: 20.6ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:59:48 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.7ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:59:51 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.6ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 78ms (Views: 71.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 14:59:56 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.9ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:00:16 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (41.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 109ms (Views: 57.7ms | ActiveRecord: 45.6ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:00:54 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (2.1ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (10.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (21.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 173ms (Views: 124.4ms | ActiveRecord: 43.9ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:00:57 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:01:08 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.0ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 68ms (Views: 52.7ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:01:14 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.8ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:02:45 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 88ms (Views: 78.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:03:03 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.9ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 26ms (Views: 21.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:03:10 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:04:36 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.8ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (20.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 93ms (Views: 52.5ms | ActiveRecord: 33.4ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:05:04 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (2.9ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 77ms (Views: 58.5ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:05:10 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 37ms (Views: 20.2ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:06:10 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (7.1ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (9.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (16.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (10.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 127ms (Views: 68.6ms | ActiveRecord: 53.0ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:08:20 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (41.1ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (20.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (31.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (72.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 245ms (Views: 68.4ms | ActiveRecord: 166.7ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:08:50 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (7.9ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (16.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 89ms (Views: 56.0ms | ActiveRecord: 26.3ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:08:59 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.8ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 22ms (Views: 16.9ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:09:41 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 87ms (Views: 82.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:09:45 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.8ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 17ms (Views: 13.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:09:48 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 22ms (Views: 16.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/gigs" for ::1 at 2019-06-04 15:09:49 -0400
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (2.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs"[0m
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 1]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 2]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (8.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 3]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 4]]
+  ↳ app/controllers/gigs_controller.rb:4
+  [1m[36mUser Load (32.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "gigs_users" ON "users"."id" = "gigs_users"."user_id" WHERE "gigs_users"."gig_id" = $1[0m  [["gig_id", 5]]
+  ↳ app/controllers/gigs_controller.rb:4
+Completed 200 OK in 65ms (Views: 17.7ms | ActiveRecord: 46.9ms)
+
+
