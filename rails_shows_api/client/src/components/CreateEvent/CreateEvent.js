@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Redirect,Link  } from 'react-router-dom';
 import './CreateEvent.css';
+import { create_gig } from '../services/services'
 
 
 class CreateEvent extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             new_event: {
                 name: "", 
@@ -19,6 +20,26 @@ class CreateEvent extends Component {
                 isError: false    
             }             
         }
+    }
+
+    createEventSubmit = async (e) => {
+        e.preventDefault();
+        const newEvent = this.state.new_event
+       const eventCreated = await create_gig(newEvent)
+        this.setState({
+            new_event: {
+                name: "", 
+                date: "", 
+                location: "",
+                genre: "",
+                event_info: "",
+                tickets_url: "",
+                image_url: "",
+                isSubmit: false,
+                isError: false    
+            }  
+        })
+        this.props.appendEventFunc(eventCreated)
     }
    
 
@@ -46,7 +67,7 @@ class CreateEvent extends Component {
     
         return (
             <div>
-                <form className="create-event">
+                <form className="create-event" onSubmit={this.createEventSubmit}>
                     <label>Name</label>
                     <input name="name" value={name} onChange={this.handleFormChange}/>
                     <label>Date</label>

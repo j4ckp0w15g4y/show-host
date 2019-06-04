@@ -5,6 +5,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import {Route, Switch} from 'react-router-dom';
 import CreateEvent from './components/CreateEvent/CreateEvent'
+import { get_gigs } from './components/services/services'
 
 // import Home from './components/Home/Home'
 
@@ -21,10 +22,17 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
-    const gigs = await axios.get('http://localhost:4567/gigs');
-    const apiData = gigs.data;
+    const gigs = await get_gigs()
     this.setState({
-      apiData: apiData,
+      apiData: gigs,
+    })
+  }
+
+  appendEventFunc = async (e) => {
+    const { apiData } = this.state
+    apiData.push(e)
+    await this.setState({
+      apiData: apiData
     })
   }
 
@@ -90,8 +98,8 @@ class App extends Component {
     return (
       <div className="App">        
           <Header submitFuncLocation = {this.submitFuncLocation} submitFuncGenre = {this.submitFuncGenre} showAllGigs={this.showAllGigs}/>
-          <Route exact path="/create-event" component={CreateEvent}/>
-
+          <Route exact path="/create-event" render={ () => <CreateEvent appendEventFunc = {this.appendEventFunc}/>}/>
+          <Route exact path="/all-gigs" component={ListAllGigs} />
           {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1> Local artists doing artist stuff</h1>}
           {/* <Route exact path="/" component={App}/> */}
 
