@@ -8,7 +8,7 @@ export const get_gigs = async () => {
 }
 
 export const create_gig = async(gig) => {
-    gig.user_id = 1
+    // gig.user_id = 1
     const res = await axios({
         method: 'post',
         url: 'http://localhost:4567/api/gigs',
@@ -20,6 +20,21 @@ export const create_gig = async(gig) => {
     return res.data
 }
 
-// export const delete_gig = async() => {
-    // const res = await 
-// }
+export const get_user_gigs = async (userId) => {
+    const res = await axios.get(`http://localhost:4567/api/users/${userId}/gigs`);
+    return res.data 
+}
+
+export const delete_gig = async(gigId) => {
+    const res = await axios({
+        method: 'delete',
+        url: `http://localhost:4567/api/gigs/${gigId}`,
+    })
+}
+
+export const update_gig = async(userId, gigId) => {
+    const res = await axios({
+        method: 'put',
+        url: `http://localhost:4567/api/gigs/${gigId}`,
+    })
+}

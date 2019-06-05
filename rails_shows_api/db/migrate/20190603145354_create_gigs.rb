@@ -8,7 +8,6 @@ class CreateGigs < ActiveRecord::Migration[5.2]
       t.text :event_info, null: false      
       t.string :tickets_url
       t.string :image_url
-      t.integer :user_id, null: false
 
       t.timestamps
     end

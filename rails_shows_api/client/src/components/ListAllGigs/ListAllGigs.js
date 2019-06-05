@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { get_gigs } from '../services/services'
+import { delete_gig } from '../services/services'
    
 
   
@@ -22,8 +23,18 @@ class ListAllGigs extends Component {
         })
       }
 
+       handleDelete = async (e, index) => {
+        e.preventDefault();
+        const gigs = await delete_gig(index)
+        const { apiData } = this.state
+        apiData.splice(index, 1)
+        await this.setState({
+            apiData
+          })
+    }
+
       showAllGigs(){
-        return this.state.apiData.map((gig) => {
+        return this.state.apiData.map((gig,index) => {
           return (
             <div>
             <h2 className="gig-info" >Name: {gig.name}</h2>
@@ -33,6 +44,7 @@ class ListAllGigs extends Component {
               <p className="gig-info">Event info: {gig.event_info}</p>
               <a className="gig-link" href={gig.tickets_url} rel="noopener noreferrer" target="_blank">Link to tickets here</a>
               <img className="gig-image" src={gig.image_url} />
+              <button className="delete-button" onClick={(e) => this.handleDelete(e,index)}>DELETE</button>
             </div>
           );     
         })

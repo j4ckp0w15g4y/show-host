@@ -6,6 +6,8 @@ import Footer from './components/Footer/Footer'
 import {Route, Switch} from 'react-router-dom';
 import CreateEvent from './components/CreateEvent/CreateEvent'
 import ListAllGigs from './components/ListAllGigs/ListAllGigs'
+// import UserGig from './components/UserGig/UserGig'
+
 
 import { get_gigs } from './components/services/services'
 
@@ -63,6 +65,13 @@ class App extends Component {
     })
   }
 
+  refreshFunc = (e) => {
+    this.setState({
+      genre_form: '',
+      location_form: ''
+    })
+  }
+
 
 
   showGigsOnPage() {
@@ -89,11 +98,13 @@ class App extends Component {
     console.log(this.state.location_form)
     console.log(this.state.apiData)
     return (
-      <div className="App">        
-          <Header submitFuncLocation = {this.submitFuncLocation} submitFuncGenre = {this.submitFuncGenre} showAllGigs={this.showAllGigs} handleClick={this.handleClick}/>
+      <div className="App">                  
+          <Header submitFuncLocation = {this.submitFuncLocation} refreshFunc = {this.refreshFunc} submitFuncGenre = {this.submitFuncGenre} showAllGigs={this.showAllGigs} handleClick={this.handleClick}/>
           {this.state.renderNewEvent &&
           <Route exact path="/create-event" render={ () => <CreateEvent appendEventFunc = {this.appendEventFunc}/>}/>}
-          
+          {/* <Route exact path='/user' component={UserGig} /> */}
+
+
           <Route exact path="/all-gigs" component={ListAllGigs} />
           {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1> Local artists doing artist stuff</h1>}
           {/* <Route exact path="/" component={App}/> */}

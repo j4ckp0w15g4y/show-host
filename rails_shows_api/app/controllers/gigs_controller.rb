@@ -42,8 +42,13 @@ class GigsController < ApplicationController
 
     def destroy
         @gig = Gig.find(params[:id])
-        @gig.destroy
-        head :no_content
+       if @gig.destroy
+        render json: { msg: 'success' }, status: :ok
+        # head :no_content
+       else 
+        render json: { errors: @gig.errors }, status: :unprocessable_entity
+       end 
+
       end
 
       private

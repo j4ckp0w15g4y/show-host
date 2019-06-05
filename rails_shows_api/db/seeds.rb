@@ -29,7 +29,6 @@ gig1 = Gig.create({
     event_info: "This years hottest show",
     tickets_url: "www.blahblah.com",
     image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
-    user_id: 1
 })
 
 gig2 = Gig.create({
@@ -40,7 +39,6 @@ gig2 = Gig.create({
     event_info: "Get READY!!!!!",
     tickets_url: "www.alpha.com",
     image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
-    user_id: 2
 })
 
 gig3 = Gig.create({
@@ -51,7 +49,6 @@ gig3 = Gig.create({
     event_info: "Live for the first time in 70(?) years, the Cretins are back with new material!!",
     tickets_url: "www.tickets-cretins.com",
     image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
-    user_id: 2
 })
 
 gig4 = Gig.create({
@@ -62,7 +59,6 @@ gig4 = Gig.create({
     event_info: "Ryan's back with a heap of new material!!!",
     tickets_url: "www.tickets-cretins.com",
     image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
-    user_id: 1
 })
 
 gig5 = Gig.create({
@@ -73,10 +69,8 @@ gig5 = Gig.create({
     event_info: "Rock gig",
     tickets_url: "www.tickets-cretins.com",
     image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
-    user_id: 1
+
 })
-
-
 
 
 

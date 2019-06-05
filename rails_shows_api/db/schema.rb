@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(version: 2019_06_03_145443) do
     t.text "event_info", null: false
     t.string "tickets_url"
     t.string "image_url"
-    t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
