@@ -19,3 +19,7 @@ export const create_gig = async(gig) => {
     })
     return res.data
 }
+
+// export const delete_gig = async() => {
+    // const res = await 
+// }

@@ -33,7 +33,7 @@ class App extends Component {
 
   appendEventFunc = async (e) => {
     const { apiData } = this.state
-    apiData.push(e)
+    apiData.unshift(e)
     await this.setState({
       apiData: apiData
     })
