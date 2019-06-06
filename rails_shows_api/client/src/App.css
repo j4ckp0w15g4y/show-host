@@ -2,6 +2,7 @@
   text-align: center;
   background-color: #A3ACBD;
   /* height: 100%; */
+  height:650px;
 }
 
 .gig-image {
@@ -14,4 +15,9 @@
 
 .body-text {
   font-style: italic;
+}
+
+.render-gig {
+    background-color: #A3ACBD;
+    margin-bottom: 40px;
 }

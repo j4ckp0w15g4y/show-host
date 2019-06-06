@@ -10,7 +10,7 @@
     justify-content: space-around;       
     margin-left: 145px;
     margin-right: 145px;
-    margin-top: 46px;
+    margin-top: 20px;
     text-decoration: none;
     padding-bottom: 10px;
 }
@@ -33,13 +33,11 @@ padding-left: 30px;
 }
 
 .header-decoration:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .hero {
     padding-top: 20px;
-    padding-bottom: -60px;
-    font-size: 30px;
-    /* margin-top: 20px; */
+    font-size: 40px;
 }
 

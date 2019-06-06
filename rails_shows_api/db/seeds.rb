@@ -72,6 +72,50 @@ gig5 = Gig.create({
 
 })
 
+gig6 = Gig.create({
+    name: "Concert",
+    date: "10/25/2019",
+    borough: "Manhattan",
+    genre: "Dance",
+    event_info: "Lorem ipsum, lorem ipsum, lorem ipsum",
+    tickets_url: "www.dance.com",
+    image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
+
+})
+
+gig7 = Gig.create({
+    name: "Event",
+    date: "09/10/2019",
+    borough: "Queens",
+    genre: "Metal",
+    event_info: "Lorem ipsum, lorem ipsum, lorem ipsum",
+    tickets_url: "www.metal.com",
+    image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
+
+})
+
+gig8 = Gig.create({
+    name: "Noise Show",
+    date: "09/28/2019",
+    borough: "The Bronx",
+    genre: "Jazz",
+    event_info: "Lorem ipsum, lorem ipsum, lorem ipsum",
+    tickets_url: "www.jazz.com",
+    image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
+})
+
+gig9 = Gig.create({
+    name: "Crazy Aces",
+    date: "11/14/2019",
+    borough: "Staten Island",
+    genre: "Punk",
+    event_info: "Lorem ipsum, lorem ipsum, lorem ipsum",
+    tickets_url: "www.punk.com",
+    image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
+})
+
+
+
 
 
 gig1.users.push(user1, user2)

@@ -11,7 +11,8 @@ class ListAllGigs extends Component {
           apiData: null,
           apiDataLoaded: false,
           genre_form: "",
-          borough_form: ""
+          borough_form: "", 
+          show: false
         };
       }
 
@@ -24,16 +25,16 @@ class ListAllGigs extends Component {
       }
 
        handleDelete = async (e, index) => {
+        // e.preventDefault();
          let id = e.target.id;
          console.log(id)
-        e.preventDefault();
         const gigs = await delete_gig(id)
         const { apiData } = this.state
         apiData.splice(index, 1)
-        await this.setState({
+         this.setState({
             apiData
-          })
-    }
+       })
+    }  
 
       showAllGigs(){
         return this.state.apiData.map((gig,) => {
@@ -46,16 +47,21 @@ class ListAllGigs extends Component {
               <div className="gig-info">Borough: {gig.borough}</div>
               <p className="gig-info">Event info: {gig.event_info}</p>
               <a className="gig-link" href={gig.tickets_url} rel="noopener noreferrer" target="_blank">Link to tickets here</a>
-              
-              <button className="delete-button" id={gig.id} onClick={(e) => this.handleDelete(e)}>DELETE</button>
+              <button className="update-button" id={gig.id}>Update</button>
+              <button className="delete-button" id={gig.id} onClick={(e) => this.handleDelete(e)}>Delete</button>
             </div>
           );     
         })
       }    
   
     render() {
+      const modal = (this.state.show) ? 
+      <div 
+        className="modal">
+        <section className="modal-content">
+        
         return (
-            <div className="columns">
+            <div className="columns" id="list-all-gigs">
              {(this.state.apiDataLoaded) ? this.showAllGigs() : <p>Loading...</p>}
 
             </div>

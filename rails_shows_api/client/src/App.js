@@ -29,9 +29,11 @@ class App extends Component {
   componentDidMount = async () => {
     const gigs = await get_gigs()
     this.setState({
-      apiData: gigs,
+      apiData: gigs
     })
   }
+
+ 
 
   appendEventFunc = async (e) => {
     const { apiData } = this.state
@@ -72,20 +74,27 @@ class App extends Component {
     })
   }
 
-
+funcHere(event){
+  const popUp = async (event) => {
+    const { name, value } = event.target;
+    console.log(value)
+    window.open(`${value}`);
+    
+  }
+}
 
   showGigsOnPage() {
     return this.state.apiData.map((gig) => {
       if(gig.genre == this.state.genre_form || gig.borough == this.state.borough_form) {
         return (
-          <div>
+          <div className="render-gig">
             
-          <h2 className="gig-info" >Name: {gig.name}</h2>
+          <h2 className="gig-info title" >Name: {gig.name}</h2>
             <p className="gig-info">Date: {gig.date}</p>
             <div className="gig-info">Genre: {gig.genre}</div>
             <div className="gig-info">Borough: {gig.borough}</div>
             <p className="gig-info">Event info: {gig.event_info}</p>
-            <a className="gig-link" href={gig.tickets_url} rel="noopener noreferrer" target="_blank">Link to tickets here</a>
+            <a className="gig-link" href={gig.tickets_url} onClick={(e) => this.funcHere(e)} rel="noopener noreferrer" target="_blank">Link to tickets here</a>
             <img className="gig-image" src={gig.image_url} />
           </div>
         );        
@@ -96,7 +105,7 @@ class App extends Component {
   render() {
     console.log(this.state.genre_form)
     console.log(this.state.borough_form)
-    console.log(this.state.apiData)
+    console.log(this.state.apiData)    
     return (
       <div className="App">                  
           <Header submitFuncBorough = {this.submitFuncBorough} refreshFunc = {this.refreshFunc} submitFuncGenre = {this.submitFuncGenre} showAllGigs={this.showAllGigs} handleClick={this.handleClick}/>
@@ -105,7 +114,7 @@ class App extends Component {
           {/* <Route exact path='/user' component={UserGig} /> */}
 
 
-          <Route exact path="/all-gigs" component={ListAllGigs} />
+          <Route exact path="/all-gigs" component={ListAllGigs}/>
           {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1 className="body-text"> "The Home of Local Events"</h1>}
           {/* <Route exact path="/" component={App}/> */}
 
