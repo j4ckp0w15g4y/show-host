@@ -2,7 +2,7 @@
     /* margin-bottom: 15px; */
     /* display: flex; */
     /* flex-direction: row-reverse;     */
-    overflow-y: scroll;
+    overflow: scroll;
       width: auto;
       position: absolute;
       margin-bottom: 20px;
@@ -11,7 +11,7 @@
 
 .modal {
   position: fixed;
-  z-index: 1;
+  z-index: 100000;
   left: 0;
   top: 0;
   width: 100%;

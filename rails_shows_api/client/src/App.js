@@ -33,6 +33,16 @@ class App extends Component {
     })
   }
 
+  // handleDelete = async (e, index) => {
+  //        let id = e.target.id;
+  //        console.log(id)
+  //       const deleteGig = await delete_gig(id)
+  //        const gigs = await get_gigs()
+  //      this.setState({
+  //        apiData: gigs
+  //      })  
+  //   } 
+
  
 
   appendEventFunc = async (e) => {
@@ -115,7 +125,7 @@ funcHere(event){
 
 
           <Route exact path="/all-gigs" component={ListAllGigs}/>
-          {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1 className="body-text"> "The Home of Local Events"</h1>}
+          {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1 className="body-text"></h1>}
           {/* <Route exact path="/" component={App}/> */}
 
           

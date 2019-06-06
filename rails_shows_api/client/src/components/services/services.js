@@ -32,9 +32,7 @@ export const delete_gig = async(gigId) => {
     })
 }
 
-export const update_gig = async(userId, gigId) => {
-    const res = await axios({
-        method: 'put',
-        url: `http://localhost:4567/api/gigs/${gigId}`,
-    })
+export const update_gig = async(gigId, data) => {
+    const res = await axios.put(`http://localhost:4567/api/gigs/${gigId}`, data)
+    return res.data 
 }
