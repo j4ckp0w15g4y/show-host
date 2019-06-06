@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: #A3ACBD;
+  /* height: 100%; */
 }
 
 .gig-image {
@@ -8,4 +10,8 @@
 
 .gig-link {
   display: block;
+}
+
+.body-text {
+  font-style: italic;
 }

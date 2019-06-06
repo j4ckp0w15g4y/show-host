@@ -1,28 +1,32 @@
 import React, { Component } from 'react';
 import SubmitFormGenre from "../SubmitFormGenre/SubmitFormGenre"
-import SubmitFormLocation from "../SubmitFormLocation/SubmitFormLocation"
+import SubmitFormBorough from "../SubmitFormBorough/SubmitFormBorough"
 import { Link } from 'react-router-dom'
+import './Header.css'
 
 
 
 class Header extends Component {
     render() {
         return (
-            <div className="header">
-                <Link onClick={this.props.refreshFunc} to='/'><h1 className="showhost-hero">ShowHost</h1></Link>
+            <div className="header">      
+            <div >
+            <Link onClick={this.props.refreshFunc} className="hero is-black" style={{ textDecoration: 'none', color: 'white' }} to='/'><h1>ShowHost</h1></Link>
+            </div>
             <nav className="navbar is-black" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">  
-            {/* <a onClick={this.props.showAllGigs}>Show All Gigs</a>          */}
-            <Link to="/all-gigs">List All Gigs</Link>
+            </div>
+            <div className="nav-options">
+            <ul className="header-nav">
+
+           <li> <Link to="/all-gigs" onClick={this.props.refreshFunc} className="header-decoration">List All Gigs</Link></li>
             {/* <Link to='/user'>User's Shows</Link> */}
-             <h3>Select Genre: <SubmitFormGenre submitFuncGenre = {this.props.submitFuncGenre}/> </h3>   
-              <h3>Select Borough: <SubmitFormLocation submitFuncLocation = {this.props.submitFuncLocation} /></h3>
-              <Link onClick={this.props.handleClick} to='/create-event'>Add New Event</Link>  
-              
-
-
-                </div>
-                </nav>
+             <li>Select Genre: <SubmitFormGenre submitFuncGenre = {this.props.submitFuncGenre}/> </li>   
+              <li>Select Borough: <SubmitFormBorough submitFuncBorough = {this.props.submitFuncBorough} /></li>
+              <li><Link onClick={this.props.handleClick} className="header-decoration" to='/create-event'>Add New Event</Link> </li> 
+              </ul>
+              </div>              
+               </nav>
             </div>
         );
     }

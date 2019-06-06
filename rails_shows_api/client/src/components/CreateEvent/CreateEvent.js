@@ -11,7 +11,7 @@ class CreateEvent extends Component {
             new_event: {
                 name: "", 
                 date: "", 
-                location: "",
+                borough: "",
                 genre: "",
                 event_info: "",
                 tickets_url: "",
@@ -30,7 +30,7 @@ class CreateEvent extends Component {
             new_event: {
                 name: "", 
                 date: "", 
-                location: "",
+                borough: "",
                 genre: "",
                 event_info: "",
                 tickets_url: "",
@@ -56,7 +56,7 @@ class CreateEvent extends Component {
     }
 
      render() {    
-        const { name, date,location,genre, event_info, tickets_url, image_url, isSubmit, isError } = this.state.new_event
+        const { name, date,borough,genre, event_info, tickets_url, image_url, isSubmit, isError } = this.state.new_event
 
         // if(isSubmit === true){ 
         //     return <Redirect to='/'/>
@@ -67,15 +67,15 @@ class CreateEvent extends Component {
     
         return (
             <div>
-                <form className="create-event" onSubmit={this.createEventSubmit}>
+                <form className="create-event is-rounded" onSubmit={this.createEventSubmit}>
                     <label>Name</label>
-                    <input name="name" value={name} onChange={this.handleFormChange}/>
+                    <input name="name" value={name} onChange={this.handleFormChange} placeholder="e.g. Rock Show"/>
                     <label>Date</label>
-                    <input name="date" value={date} onChange={this.handleFormChange}/>
-                    <label>Location</label>
-                    <input name="location" value={location} onChange={this.handleFormChange}/>
+                    <input name="date" value={date} onChange={this.handleFormChange}placeholder="mm/dd/yyyy"/>
+                    <label>Borough</label>
+                    <input name="borough" value={borough} onChange={this.handleFormChange} placeholder="e.g. Manhattan"/>
                     <label>Genre</label>
-                    <input name="genre" value={genre} onChange={this.handleFormChange}/>
+                    <input name="genre" value={genre} onChange={this.handleFormChange} placeholder="e.g. Rock"/>
                     <label>Event Info</label>
                     <input name="event_info" value={event_info} onChange={this.handleFormChange}/>
                     <label>Ticket URL</label>

@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2019_06_03_145443) do
   create_table "gigs", force: :cascade do |t|
     t.string "name", null: false
     t.string "date", null: false
-    t.string "location", null: false
+    t.string "borough", null: false
     t.string "genre", null: false
     t.text "event_info", null: false
     t.string "tickets_url"

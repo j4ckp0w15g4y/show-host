@@ -9,7 +9,7 @@
 
 # t.string :name
 # t.string :date
-# t.string :location
+# t.string :borough
 # t.text :event_info
 # t.string :tickets_url
 # t.string :image_url
@@ -25,7 +25,7 @@ gig1 = Gig.create({
     name: "Battle of the Bands",
     date: "07/22/2019",
     genre: "Metal",
-    location: "Brooklyn",
+    borough: "Brooklyn",
     event_info: "This years hottest show",
     tickets_url: "www.blahblah.com",
     image_url: "https://static1.squarespace.com/static/5853f25b6b8f5bf3f771d7d4/t/59bcc019c027d81dff08d41d/1505542184892/gigvr_home_page_banner.jpg?format=1500w",
@@ -34,7 +34,7 @@ gig1 = Gig.create({
 gig2 = Gig.create({
     name: "Titan Show",
     date: "07/22/2019",
-    location: "The Bronx",
+    borough: "The Bronx",
     genre: "Jazz",
     event_info: "Get READY!!!!!",
     tickets_url: "www.alpha.com",
@@ -44,7 +44,7 @@ gig2 = Gig.create({
 gig3 = Gig.create({
     name: "The Cretins Live",
     date: "10/12/2019",
-    location: "Staten Island",
+    borough: "Staten Island",
     genre: "Punk",
     event_info: "Live for the first time in 70(?) years, the Cretins are back with new material!!",
     tickets_url: "www.tickets-cretins.com",
@@ -54,7 +54,7 @@ gig3 = Gig.create({
 gig4 = Gig.create({
     name: "Ryan's gig",
     date: "10/12/2019",
-    location: "Manhattan",
+    borough: "Manhattan",
     genre: "Hip-hop",
     event_info: "Ryan's back with a heap of new material!!!",
     tickets_url: "www.tickets-cretins.com",
@@ -64,7 +64,7 @@ gig4 = Gig.create({
 gig5 = Gig.create({
     name: "Show",
     date: "10/12/2019",
-    location: "Queens",
+    borough: "Queens",
     genre: "Rock",
     event_info: "Rock gig",
     tickets_url: "www.tickets-cretins.com",

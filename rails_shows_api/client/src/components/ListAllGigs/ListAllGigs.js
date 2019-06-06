@@ -11,7 +11,7 @@ class ListAllGigs extends Component {
           apiData: null,
           apiDataLoaded: false,
           genre_form: "",
-          location_form: ""
+          borough_form: ""
         };
       }
 
@@ -24,8 +24,10 @@ class ListAllGigs extends Component {
       }
 
        handleDelete = async (e, index) => {
+         let id = e.target.id;
+         console.log(id)
         e.preventDefault();
-        const gigs = await delete_gig(index)
+        const gigs = await delete_gig(id)
         const { apiData } = this.state
         apiData.splice(index, 1)
         await this.setState({
@@ -34,17 +36,18 @@ class ListAllGigs extends Component {
     }
 
       showAllGigs(){
-        return this.state.apiData.map((gig,index) => {
+        return this.state.apiData.map((gig,) => {
           return (
-            <div>
-            <h2 className="gig-info" >Name: {gig.name}</h2>
-              <p className="gig-info">Date: {gig.date}</p>
+            <div className="gig column is-one-third" >
+            <h2 className="gig-info title" >Name: {gig.name}</h2>
+              <img className="image " src={gig.image_url} />
+              <p className="gig-info subtitle">Date: {gig.date}</p>
               <div className="gig-info">Genre: {gig.genre}</div>
-              <div className="gig-info">Location: {gig.location}</div>
+              <div className="gig-info">Borough: {gig.borough}</div>
               <p className="gig-info">Event info: {gig.event_info}</p>
               <a className="gig-link" href={gig.tickets_url} rel="noopener noreferrer" target="_blank">Link to tickets here</a>
-              <img className="gig-image" src={gig.image_url} />
-              <button className="delete-button" onClick={(e) => this.handleDelete(e,index)}>DELETE</button>
+              
+              <button className="delete-button" id={gig.id} onClick={(e) => this.handleDelete(e)}>DELETE</button>
             </div>
           );     
         })
@@ -52,7 +55,7 @@ class ListAllGigs extends Component {
   
     render() {
         return (
-            <div>
+            <div className="columns">
              {(this.state.apiDataLoaded) ? this.showAllGigs() : <p>Loading...</p>}
 
             </div>

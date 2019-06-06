@@ -1,0 +1,9 @@
+.list-all-gigs {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.columns {
+    margin-left: 40px;
+}

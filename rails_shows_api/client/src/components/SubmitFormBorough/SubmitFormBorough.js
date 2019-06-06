@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-class SubmitFormLocation extends Component {
+class SubmitFormBorough extends Component {
     render() {
         return (
             <div className="select is-rounded is-small is-right">
                      <form>
-                    <select type="text" onChange={this.props.submitFuncLocation} value={this.props.location_form}>
+                    <select type="text" onChange={this.props.submitFuncBorough} value={this.props.borough_form}>
                         <option value=''></option>
                         <option value="The Bronx">The Bronx</option>
                         <option value="Queens">Queens</option>
@@ -19,4 +19,4 @@ class SubmitFormLocation extends Component {
     }
 }
 
-export default SubmitFormLocation;
+export default SubmitFormBorough;

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class SubmitFormGenre extends Component {
     render() {
         return (
-            <div>            
+            <div className="select is-rounded is-small is-right">            
                 <form>
                     <select type="text" onChange={this.props.submitFuncGenre} value={this.props.genre_form}>
                         <option value=''></option>

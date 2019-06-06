@@ -21,7 +21,7 @@ class App extends Component {
       apiData: null,
       apiDataLoaded: false,
       genre_form: "",
-      location_form: "",
+      borough_form: "",
       renderNewEvent: false
     };
   }
@@ -49,9 +49,9 @@ class App extends Component {
     })
   }
 
-  submitFuncLocation = (e) => {
+  submitFuncBorough = (e) => {
     this.setState({
-      location_form: e.target.value,
+      borough_form: e.target.value,
       apiDataLoaded: true 
 
     })
@@ -61,14 +61,14 @@ class App extends Component {
     this.setState({
       renderNewEvent:true,
       genre_form: '',
-      location_form: ''      
+      borough_form: ''      
     })
   }
 
   refreshFunc = (e) => {
     this.setState({
       genre_form: '',
-      location_form: ''
+      borough_form: ''
     })
   }
 
@@ -76,14 +76,14 @@ class App extends Component {
 
   showGigsOnPage() {
     return this.state.apiData.map((gig) => {
-      if(gig.genre == this.state.genre_form || gig.location == this.state.location_form) {
+      if(gig.genre == this.state.genre_form || gig.borough == this.state.borough_form) {
         return (
           <div>
             
           <h2 className="gig-info" >Name: {gig.name}</h2>
             <p className="gig-info">Date: {gig.date}</p>
             <div className="gig-info">Genre: {gig.genre}</div>
-            <div className="gig-info">Location: {gig.location}</div>
+            <div className="gig-info">Borough: {gig.borough}</div>
             <p className="gig-info">Event info: {gig.event_info}</p>
             <a className="gig-link" href={gig.tickets_url} rel="noopener noreferrer" target="_blank">Link to tickets here</a>
             <img className="gig-image" src={gig.image_url} />
@@ -95,18 +95,18 @@ class App extends Component {
 
   render() {
     console.log(this.state.genre_form)
-    console.log(this.state.location_form)
+    console.log(this.state.borough_form)
     console.log(this.state.apiData)
     return (
       <div className="App">                  
-          <Header submitFuncLocation = {this.submitFuncLocation} refreshFunc = {this.refreshFunc} submitFuncGenre = {this.submitFuncGenre} showAllGigs={this.showAllGigs} handleClick={this.handleClick}/>
+          <Header submitFuncBorough = {this.submitFuncBorough} refreshFunc = {this.refreshFunc} submitFuncGenre = {this.submitFuncGenre} showAllGigs={this.showAllGigs} handleClick={this.handleClick}/>
           {this.state.renderNewEvent &&
           <Route exact path="/create-event" render={ () => <CreateEvent appendEventFunc = {this.appendEventFunc}/>}/>}
           {/* <Route exact path='/user' component={UserGig} /> */}
 
 
           <Route exact path="/all-gigs" component={ListAllGigs} />
-          {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1> Local artists doing artist stuff</h1>}
+          {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1 className="body-text"> "The Home of Local Events"</h1>}
           {/* <Route exact path="/" component={App}/> */}
 
           
