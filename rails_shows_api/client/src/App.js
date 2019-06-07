@@ -3,13 +3,14 @@ import axios from 'axios'
 import './App.css';
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, Redirect} from 'react-router-dom';
 import CreateEvent from './components/CreateEvent/CreateEvent'
 import ListAllGigs from './components/ListAllGigs/ListAllGigs'
 // import UserGig from './components/UserGig/UserGig'
-// import ListGigsByCategory from './components/ListGigsByCategory/ListGigsByCategory'
 import SubmitFormGenre from './components/SubmitFormGenre/SubmitFormGenre'
 import SubmitFormBorough from './components/SubmitFormBorough/SubmitFormBorough'
+import Home from './components/Home/Home'
+
 
 
 
@@ -124,12 +125,10 @@ funcHere(event){
           <Header submitFuncBorough = {this.submitFuncBorough} refreshFunc = {this.refreshFunc} submitFuncGenre = {this.submitFuncGenre} showAllGigs={this.showAllGigs} handleClick={this.handleClick}/>
           {this.state.renderNewEvent &&
           <Route exact path="/create-event" render={ () => <CreateEvent appendEventFunc = {this.appendEventFunc}/>}/>}
+          <Route exact path="/" render={ () => <Home />}/>
           {/* <Route exact path='/user' component={UserGig} /> */}
-
-
           <Route exact path="/all-gigs" component={ListAllGigs}/>
           <Route exact path="/show-gigs-genre" component={SubmitFormGenre}  />
-          
           {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1 className="body-text"></h1>}
 
           <Route exact path="/show-gigs-borough" component={SubmitFormBorough}  />
