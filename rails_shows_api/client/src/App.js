@@ -126,12 +126,10 @@ funcHere(event){
           {this.state.renderNewEvent &&
           <Route exact path="/create-event" render={ () => <CreateEvent appendEventFunc = {this.appendEventFunc}/>}/>}
           <Route exact path="/" render={ () => <Home />}/>
-          {/* <Route exact path='/user' component={UserGig} /> */}
           <Route exact path="/all-gigs" component={ListAllGigs}/>
-          <Route exact path="/show-gigs-genre" component={SubmitFormGenre}  />
+          <div className="show-gigs-by">
           {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1 className="body-text"></h1>}
-
-          <Route exact path="/show-gigs-borough" component={SubmitFormBorough}  />
+          </div>
 
 
           

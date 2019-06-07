@@ -99,11 +99,11 @@ class CreateEvent extends Component {
                     </select>
                 </form>
                     <label>Event Info:</label>
-                    <input name="event_info" value={event_info} onChange={this.handleFormChange}/>
+                    <input name="event_info" value={event_info} onChange={this.handleFormChange} placeholder="e.g. List set times, line-up"/>
                     <label>Ticket URL:</label>
-                    <input name="tickets_url" value={tickets_url} onChange={this.handleFormChange}/>
+                    <input name="tickets_url" value={tickets_url} onChange={this.handleFormChange} placeholder="e.g. www.concert.com"/>
                     <label>Image URL:</label>
-                    <input name="image_url" value={image_url} onChange={this.handleFormChange}/>
+                    <input name="image_url" value={image_url} onChange={this.handleFormChange} />
                     <button type="submit">Submit</button> 
                     <Link to='/'>Back</Link>
                    
