@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class SubmitFormGenre extends Component {
     render() {
         return (
-            <div className="select is-rounded is-small is-right">            
+           <Link to="/show-gigs"> <div className="select is-rounded is-small is-right">         
                 <form>
                     <select type="text" onChange={this.props.submitFuncGenre} value={this.props.genre_form}>
                         <option value=''></option>
@@ -17,6 +18,7 @@ class SubmitFormGenre extends Component {
                 </form>
                 
             </div>
+            </Link>   
         );
     }
 }

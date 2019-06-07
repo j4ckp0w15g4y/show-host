@@ -7,6 +7,10 @@ import {Route, Switch} from 'react-router-dom';
 import CreateEvent from './components/CreateEvent/CreateEvent'
 import ListAllGigs from './components/ListAllGigs/ListAllGigs'
 // import UserGig from './components/UserGig/UserGig'
+// import ListGigsByCategory from './components/ListGigsByCategory/ListGigsByCategory'
+import SubmitFormGenre from './components/SubmitFormGenre/SubmitFormGenre'
+import SubmitFormBorough from './components/SubmitFormBorough/SubmitFormBorough'
+
 
 
 import { get_gigs } from './components/services/services'
@@ -93,7 +97,7 @@ funcHere(event){
   }
 }
 
-  showGigsOnPage() {
+ showGigsOnPage() {        
     return this.state.apiData.map((gig) => {
       if(gig.genre == this.state.genre_form || gig.borough == this.state.borough_form) {
         return (
@@ -110,12 +114,11 @@ funcHere(event){
         );        
       }          
     });
-  }
+  }  
 
   render() {
-    console.log(this.state.genre_form)
-    console.log(this.state.borough_form)
-    console.log(this.state.apiData)    
+    const { apiData, genre_form, borough_form } = this.state;
+     
     return (
       <div className="App">                  
           <Header submitFuncBorough = {this.submitFuncBorough} refreshFunc = {this.refreshFunc} submitFuncGenre = {this.submitFuncGenre} showAllGigs={this.showAllGigs} handleClick={this.handleClick}/>
@@ -125,8 +128,12 @@ funcHere(event){
 
 
           <Route exact path="/all-gigs" component={ListAllGigs}/>
+          <Route exact path="/show-gigs-genre" component={SubmitFormGenre}  />
+          
           {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1 className="body-text"></h1>}
-          {/* <Route exact path="/" component={App}/> */}
+
+          <Route exact path="/show-gigs-borough" component={SubmitFormBorough}  />
+
 
           
         <Footer />
