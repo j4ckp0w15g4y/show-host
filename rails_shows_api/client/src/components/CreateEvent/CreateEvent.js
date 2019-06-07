@@ -68,19 +68,41 @@ class CreateEvent extends Component {
         return (
             <div>
                 <form className="create-event is-rounded" onSubmit={this.createEventSubmit}>
-                    <label>Name</label>
+                    <label>Name:</label>
                     <input name="name" value={name} onChange={this.handleFormChange} placeholder="e.g. Rock Show"/>
-                    <label>Date</label>
-                    <input name="date" value={date} onChange={this.handleFormChange}placeholder="mm/dd/yyyy"/>
-                    <label>Borough</label>
-                    <input name="borough" value={borough} onChange={this.handleFormChange} placeholder="e.g. Manhattan"/>
-                    <label>Genre</label>
-                    <input name="genre" value={genre} onChange={this.handleFormChange} placeholder="e.g. Rock"/>
-                    <label>Event Info</label>
+                    <label>Date:</label>
+                    <input  type="date" name="date" value={date} onChange={this.handleFormChange}placeholder="mm/dd/yyyy"/>
+                        {/* figure out type="date" */}
+                    <label>Borough:</label>
+                    {/* <input name="borough" value={borough} onChange={this.handleFormChange} placeholder="e.g. Manhattan"/> */}
+                     <form>
+                    <select name="borough" type="text" onChange={this.handleFormChange} value={borough}>
+                        <option value=''></option>
+                        <option value="The Bronx">The Bronx</option>
+                        <option value="Queens">Queens</option>
+                        <option value="Manhattan">Manhattan</option>
+                        <option value="Brooklyn">Brooklyn</option>
+                        <option value="Staten Island">Staten Island</option>
+                    </select>
+                </form>
+                    <label>Genre:</label>
+                    {/* <input name="genre" value={genre} onChange={this.handleFormChange} placeholder="e.g. Rock"/> */}
+                      <form>
+                    <select name="genre" type="text" onChange={this.handleFormChange} value={genre}>
+                        <option value=''></option>
+                        <option value="Jazz">Jazz</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Punk">Punk</option>
+                        <option value="Hip-hop">Hip-hop</option>
+                        <option value="Dance">Dance</option>
+                        <option value="Metal">Metal</option>
+                    </select>
+                </form>
+                    <label>Event Info:</label>
                     <input name="event_info" value={event_info} onChange={this.handleFormChange}/>
-                    <label>Ticket URL</label>
+                    <label>Ticket URL:</label>
                     <input name="tickets_url" value={tickets_url} onChange={this.handleFormChange}/>
-                    <label>Image URL</label>
+                    <label>Image URL:</label>
                     <input name="image_url" value={image_url} onChange={this.handleFormChange}/>
                     <button type="submit">Submit</button> 
                     <Link to='/'>Back</Link>

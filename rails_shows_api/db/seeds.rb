@@ -23,7 +23,7 @@ user2 = User.create({
 
 gig1 = Gig.create({
     name: "Battle of the Bands",
-    date: "07/22/2019",
+    date: "2019-10-07",
     genre: "Metal",
     borough: "Brooklyn",
     event_info: "This years hottest show",
@@ -33,7 +33,7 @@ gig1 = Gig.create({
 
 gig2 = Gig.create({
     name: "Titan Show",
-    date: "07/22/2019",
+    date: "2019-11-07",
     borough: "The Bronx",
     genre: "Jazz",
     event_info: "Get READY!!!!!",
@@ -43,7 +43,7 @@ gig2 = Gig.create({
 
 gig3 = Gig.create({
     name: "The Cretins Live",
-    date: "10/12/2019",
+    date: "2019-12-13",
     borough: "Staten Island",
     genre: "Punk",
     event_info: "Live for the first time in 70(?) years, the Cretins are back with new material!!",
@@ -53,7 +53,7 @@ gig3 = Gig.create({
 
 gig4 = Gig.create({
     name: "Ryan's gig",
-    date: "10/12/2019",
+    date: "2019-12-11",
     borough: "Manhattan",
     genre: "Hip-hop",
     event_info: "Ryan's back with a heap of new material!!!",
@@ -63,7 +63,7 @@ gig4 = Gig.create({
 
 gig5 = Gig.create({
     name: "Show",
-    date: "10/12/2019",
+    date: "2019-10-09",
     borough: "Queens",
     genre: "Rock",
     event_info: "Rock gig",
@@ -74,7 +74,7 @@ gig5 = Gig.create({
 
 gig6 = Gig.create({
     name: "Concert",
-    date: "10/25/2019",
+    date: "2019-10-25",
     borough: "Manhattan",
     genre: "Dance",
     event_info: "Lorem ipsum, lorem ipsum, lorem ipsum",
@@ -85,7 +85,7 @@ gig6 = Gig.create({
 
 gig7 = Gig.create({
     name: "Event",
-    date: "09/10/2019",
+    date: "2019-09-10",
     borough: "Queens",
     genre: "Metal",
     event_info: "Lorem ipsum, lorem ipsum, lorem ipsum",
@@ -96,7 +96,7 @@ gig7 = Gig.create({
 
 gig8 = Gig.create({
     name: "Noise Show",
-    date: "09/28/2019",
+    date: "2019-09-28",
     borough: "The Bronx",
     genre: "Jazz",
     event_info: "Lorem ipsum, lorem ipsum, lorem ipsum",
@@ -106,7 +106,7 @@ gig8 = Gig.create({
 
 gig9 = Gig.create({
     name: "Crazy Aces",
-    date: "11/14/2019",
+    date: "2019-11-14",
     borough: "Staten Island",
     genre: "Punk",
     event_info: "Lorem ipsum, lorem ipsum, lorem ipsum",

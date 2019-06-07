@@ -99,12 +99,14 @@ class ListAllGigs extends Component {
             <h2 className="gig-info title" >Name: {gig.name}</h2>
               <img className="image " src={gig.image_url} />
               <p className="gig-info subtitle">Date: {gig.date}</p>
+              <div className="info-second">
               <div className="gig-info">Genre: {gig.genre}</div>
               <div className="gig-info">Borough: {gig.borough}</div>
               <p className="gig-info">Event info: {gig.event_info}</p>
               <a className="gig-link" href={gig.tickets_url} rel="noopener noreferrer" target="_blank">Link to tickets here</a>
               <button className="update-button " id={gig.id} onClick={this.showModal}>Update</button>
               <button className="delete-button" id={gig.id} onClick={(e) => this.handleDelete(e)}>Delete</button>
+              </div>
             </div>
           );     
         })
@@ -120,7 +122,7 @@ class ListAllGigs extends Component {
                     <label>Name</label>
                     <input type='text' name="name" onChange={this.handleFormChange} placeholder="e.g. Rock Show"/>
                     <label>Date</label>
-                    <input type='text' name="date" onChange={this.handleFormChange}placeholder="mm/dd/yyyy"/>
+                    <input type='date' name="date" onChange={this.handleFormChange}placeholder="mm/dd/yyyy"/>
                     <label>Borough</label>
                     <input type='text' name="borough" onChange={this.handleFormChange} placeholder="e.g. Manhattan"/>
                     <label>Genre</label>
