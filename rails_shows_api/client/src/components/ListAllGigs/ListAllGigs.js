@@ -77,7 +77,6 @@ class ListAllGigs extends Component {
                 image_url: image_url
         }
 
-        // console.log(updatedEvent);
        const eventCreated = await update_gig(id, updatedEvent)  
 
        const gigs = await get_gigs()

@@ -6,17 +6,11 @@ import Footer from './components/Footer/Footer'
 import {Route, Switch, Redirect} from 'react-router-dom';
 import CreateEvent from './components/CreateEvent/CreateEvent'
 import ListAllGigs from './components/ListAllGigs/ListAllGigs'
-// import UserGig from './components/UserGig/UserGig'
 import SubmitFormGenre from './components/SubmitFormGenre/SubmitFormGenre'
 import SubmitFormBorough from './components/SubmitFormBorough/SubmitFormBorough'
 import Home from './components/Home/Home'
-
-
-
-
 import { get_gigs } from './components/services/services'
 
-// import Home from './components/Home/Home'
 
 
 class App extends Component {
@@ -37,16 +31,6 @@ class App extends Component {
       apiData: gigs
     })
   }
-
-  // handleDelete = async (e, index) => {
-  //        let id = e.target.id;
-  //        console.log(id)
-  //       const deleteGig = await delete_gig(id)
-  //        const gigs = await get_gigs()
-  //      this.setState({
-  //        apiData: gigs
-  //      })  
-  //   } 
 
  
 
@@ -130,9 +114,6 @@ funcHere(event){
           <div className="show-gigs-by">
           {(this.state.apiDataLoaded) ? this.showGigsOnPage() : <h1 className="body-text"></h1>}
           </div>
-
-
-          
         <Footer />
         </div>
     );

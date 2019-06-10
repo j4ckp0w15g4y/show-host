@@ -10,15 +10,6 @@ class GigsController < ApplicationController
     end 
 
 
-
-    # def show
-    #     @gig = Gig.find(params[:id])
-    #     @users = @gig.users
-    #     render json: @users, status: :ok
-    #     # include: :@gigs
-         
-    #   end
-
     def create
         @gig = Gig.new(gig_params)
         
