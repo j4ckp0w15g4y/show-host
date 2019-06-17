@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  background-color: #A3ACBD;
+  height:650px;  
+}
+
+.show-gigs-by {
+  margin-bottom: 40px;
+}
+
+
+.gig-image {
+  width: 40%;
+}
+
+.gig-link {
+  display: block;
+}
+
+.body-text {
+  font-style: italic;
+}
+
+.render-gig {
+    background-color: #A3ACBD;    
+}
