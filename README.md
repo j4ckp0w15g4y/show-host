@@ -77,9 +77,9 @@ I am essentially rendering information drawn from an API that I have created, an
 
 ### Deployment
 
+https://showhost-nyc.herokuapp.com/
 
 
 
-ervers, search engines, etc.)
 
 
